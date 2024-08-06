@@ -29,7 +29,7 @@ body {
     font-family: var(--main-font);
 }
 
-h1 {
+h2 {
     margin: 0;
     font-weight: var(--bold);
     font-size: var(--header);
@@ -42,10 +42,9 @@ p {
     color: var(--secondary);
 }
 
-section.card-container {
+.card-container {
     background-color: var(--tertiary);
-    width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +55,7 @@ article.qr-card {
     flex-direction: column;
     align-items: center;
     background-color: var(--quaternary);
-    width: 20rem;
+    max-width: 20rem;
     height: 31.18rem;
     padding: 1rem 1rem 2.5rem 1rem;
     text-align: center;
@@ -73,11 +72,11 @@ article.qr-card > img {
 article.qr-card .header {
     padding-top: 1.5rem;
     line-height: 1.2;
-    width: 16rem;
+    max-width: 16rem;
 }
 
 article.qr-card .paragraph {
     line-height: 1.4;
     letter-spacing: 0.0125rem;
-    width: 16rem;
+    max-width: 16rem;
 }
